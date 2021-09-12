@@ -2,8 +2,10 @@ import sys
 import random
 import csv
 
+
 def get_random_choice(lst):
-  return random.choice(lst)
+    return random.choice(lst)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -13,7 +15,6 @@ if __name__ == "__main__":
     states = ["CA", "WA", "TX", "NV", "CO", "OR", "AZ", "WY", "NM", "UT"]
     colors = ["Brown", "Blue", "Orange", "Yellow", "Green", "Red"]
     fieldnames = ['State', 'Color', 'Count']
-
 
     entries = int(sys.argv[1])
     dataset_fn = "mnm_dataset.csv"
